@@ -33,7 +33,12 @@
 
 #CMAke
 *.cmake
-CMakeCache
+CMakeCache.txt
 Makefile
 CMakeFiles/*
 test
+cmake-build-debug/*
+
+
+#.idea
+.idea/*
