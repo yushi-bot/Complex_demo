@@ -19,20 +19,20 @@ class Complex
 
 		Complex& operator=(const Complex& complex)	    =default;
 		Complex& operator=(Complex&& complex)	        =default;
-		inline bool operator==(Complex b);
-		inline bool operator==(double b);
-		inline Complex operator+(Complex b);
-		inline Complex operator+(double b);
-		inline Complex operator-(Complex b);
-		inline Complex operator-(double b);
-		inline Complex operator*(Complex b);
-		inline Complex operator*(double b);
-		inline Complex operator/(Complex b);
-		inline Complex operator/(double b);
+		inline bool operator==(Complex b) const;
+		inline bool operator==(double b) const;
+		inline Complex operator+(Complex b) const;
+		inline Complex operator+(double b) const;
+		inline Complex operator-(Complex b) const;
+		inline Complex operator-(double b) const;
+		inline Complex operator*(Complex b) const;
+		inline Complex operator*(double b) const;
+		inline Complex operator/(Complex b) const;
+		inline Complex operator/(double b) const;
 		inline double getRealPart();
-		inline double getImaginaryPart();
-		inline double getNorm();
-		inline double getAngle();
+		inline double getImaginaryPart() const;
+		inline double getNorm() const;
+		inline double getAngle() const;
 
         inline void setRealPart(double real);
         inline void setImaginaryPart(double imaginary);
@@ -44,8 +44,8 @@ class Complex
 		Complex power(int b) const;
 		Complex power(double b) const;
 
-		void print();
-		void printIndexForm();
+		void print() const;
+		void printIndexForm() const;
 
 	private:
         double re,im;

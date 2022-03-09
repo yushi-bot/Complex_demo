@@ -58,10 +58,10 @@ Complex Complex::power(double b) const{
     return ComplexIndexForm(norm,mainAngle);
 }
 
-void Complex::print(){
+void Complex::print() const{
     std::cout<<std::showpoint<<std::setprecision(8)<<re<<" + "<<im<<" i "<<std::endl;
 }
 
-void Complex::printIndexForm() {
+void Complex::printIndexForm() const {
     std::cout<<std::showpoint<<std::setprecision(8)<<r<<" < "<<std::setprecision(3)<<angle*180/PI<<" ° "<<std::endl;
 }
